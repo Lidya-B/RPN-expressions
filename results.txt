@@ -1,0 +1,126 @@
+
+( Token:  2) 		push2
+( Token:  4) 		push4
+( Token:  *) 		pop 4		 pop 2		 push 8 
+( Token:  5) 		push5
+( Token:  +) 		pop 5		 pop 8		 push 13 
+( Token:  ;) 		pop 13
+		 valid: Result: 13
+
+
+( Token:  13) 		push13
+( Token:  5) 		push5
+( Token:  %) 		pop 5		 pop 13		 push 3 
+( Token:  5) 		push5
+( Token:  +) 		pop 5		 pop 3		 push 8 
+( Token:  ;) 		pop 8
+		 valid: Result: 8
+
+
+( Token:  15) 		push15
+( Token:  1) 		push1
+( Token:  +) 		pop 1		 pop 15		 push 16 
+( Token:  2) 		push2
+( Token:  /) 		pop 2		 pop 16		 push 8 
+( Token:  1) 		push1
+( Token:  -) 		pop 1		 pop 8		 push 7 
+( Token:  ;) 		pop 7
+		 valid: Result: 7
+
+
+( Token:  15) 		push15
+( Token:  +) 		
+( Token:  1) 		
+( Token:  +) 		
+( Token:  2) 		
+( Token:  /) 		
+( Token:  1) 		
+( Token:  -) 		
+( Token:  ;) 		
+ 		 Invalid RPN Expression - not enough oprandes
+
+
+( Token:  3) 		push3
+( Token:  4) 		push4
+( Token:  +) 		pop 4		 pop 3		 push 7 
+( Token:  15) 		push15
+( Token:  10) 		push10
+( Token:  -) 		pop 10		 pop 15		 push 5 
+( Token:  *) 		pop 5		 pop 7		 push 35 
+( Token:  ;) 		pop 35
+		 valid: Result: 35
+
+
+( Token:  3) 		push3
+( Token:  4) 		push4
+( Token:  +) 		pop 4		 pop 3		 push 7 
+( Token:  6) 		push6
+( Token:  15) 		push15
+( Token:  10) 		push10
+( Token:  -) 		pop 10		 pop 15		 push 5 
+( Token:  *) 		pop 5		 pop 6		 push 30 
+( Token:  ;) 		pop 30
+		 valid: Result: 30
+
+
+( Token:  2) 		push2
+( Token:  13) 		push13
+( Token:  +) 		pop 13		 pop 2		 push 15 
+( Token:  14) 		push14
+( Token:  6) 		push6
+( Token:  -) 		pop 6		 pop 14		 push 8 
+( Token:  -) 		pop 8		 pop 15		 push 7 
+( Token:  5) 		push5
+( Token:  *) 		pop 5		 pop 7		 push 35 
+( Token:  4) 		push4
+( Token:  +) 		pop 4		 pop 35		 push 39 
+( Token:  ;) 		pop 39
+		 valid: Result: 39
+
+
+( Token:  35) 		push35
+( Token:  6) 		push6
+( Token:  4) 		push4
+( Token:  2) 		push2
+( Token:  2) 		push2
+( Token:  /) 		pop 2		 pop 2		 push 1 
+( Token:  +) 		pop 1		 pop 4		 push 5 
+( Token:  *) 		pop 5		 pop 6		 push 30 
+( Token:  -) 		pop 30		 pop 35		 push 5 
+( Token:  ;) 		pop 5
+		 valid: Result: 5
+
+
+( Token:  3) 		push3
+( Token:  4) 		push4
+( Token:  +) 		pop 4		 pop 3		 push 7 
+( Token:  1) 		push1
+( Token:  2) 		push2
+( Token:  -) 		pop 2		 pop 1		 push -1 
+( Token:  *) 		pop -1		 pop 7		 push -7 
+( Token:  4) 		push4
+( Token:  2) 		push2
+( Token:  /) 		pop 2		 pop 4		 push 2 
+( Token:  3) 		push3
+( Token:  -) 		pop 3		 pop 2		 push -1 
+( Token:  +) 		pop -1		 pop -7		 push -8 
+( Token:  ;) 		pop -8
+		 valid: Result: -8
+
+
+( Token:  3) 		push3
+( Token:  14) 		push14
+( Token:  1) 		push1
+( Token:  2) 		push2
+( Token:  4) 		push4
+( Token:  2) 		push2
+( Token:  3) 		push3
+( Token:  +) 		pop 3		 pop 2		 push 5 
+( Token:  %) 		pop 5		 pop 4		 push 4 
+( Token:  *) 		pop 4		 pop 2		 push 8 
+( Token:  +) 		pop 8		 pop 1		 push 9 
+( Token:  -) 		pop 9		 pop 14		 push 5 
+( Token:  +) 		pop 5		 pop 3		 push 8 
+( Token:  ;) 		pop 8
+		 valid: Result: 8
+
